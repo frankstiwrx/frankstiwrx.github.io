@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank William - Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1 style="font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Frank
+            William</h1>
+
+        <nav>
+            <ul class="header-menu">
+
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="introducao">
+        <img src="img/fotoperfil.jpg" alt="Frank William">
+        <div>
+            <h1>Desenvolvedor<br>HTML, CSS, JavaScript &<br> Java</h1>
+            <p>Sobral - CE</p>
+        </div>
+    </main>
+
+    <section class="experiencia" id="experiencia" aria-label="Experiência">
+
+        <h2 class="subtitulo">Experiência</h2>
+
+        <div>
+            <p class="experiencia-texto">Desenvolvo projetos web utilizando <Strong>HTML</Strong>, <Strong>CSS</Strong>,
+                <Strong>JavaScript</Strong> e <Strong>Java</Strong> . Já criei aplicações como uma calculadora
+                interativa, páginas de portfólio e sistemas de formulário com validação. Tenho interesse especial por
+                usabilidade e busco sempre alinhar design funcional com boas práticas de desenvolvimento.
+            </p>
+
+
+            <div class="trabalho">
+
+                <span class="trabalho-ano">2025</span>
+
+                <h3 class="trabalho-titulo">Calculadora</h3>
+
+                <span class="trabalho-titulo">Trabalho com JavaScript</span>
+
+                <p class="trabalho-texto">No projeto Calculadora desenvolvi uma aplicação web utilizando HTML, CSS e
+                    JavaScript puro. O foco foi criar uma interface intuitiva e responsiva, além de aplicar lógica de
+                    programação para realizar as operações matemáticas básicas. Esse projeto também foi importante para
+                    praticar manipulação do DOM e eventos.</p>
+
+                <ul class="trabalho-habilidade">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+            </div>
+
+            <div class="trabalho">
+
+                <span class="trabalho-ano">2025</span>
+
+                <h3 class="trabalho-titulo">Calculadora</h3>
+
+                <span class="trabalho-titulo">Trabalho com JavaScript</span>
+
+                <p class="trabalho-texto">No projeto Calculadora desenvolvi uma aplicação web utilizando HTML, CSS e
+                    JavaScript puro. O foco foi criar uma interface intuitiva e responsiva, além de aplicar lógica de
+                    programação para realizar as operações matemáticas básicas. Esse projeto também foi importante para
+                    praticar manipulação do DOM e eventos.</p>
+
+                <ul class="trabalho-habilidade">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+            </div>
+
+            <div class="trabalho">
+
+                <span class="trabalho-ano">2025</span>
+
+                <h3 class="trabalho-titulo">Calculadora</h3>
+
+                <span class="trabalho-titulo">Trabalho com JavaScript</span>
+
+                <p class="trabalho-texto">No projeto Calculadora desenvolvi uma aplicação web utilizando HTML, CSS e
+                    JavaScript puro. O foco foi criar uma interface intuitiva e responsiva, além de aplicar lógica de
+                    programação para realizar as operações matemáticas básicas. Esse projeto também foi importante para
+                    praticar manipulação do DOM e eventos.</p>
+
+                <ul class="trabalho-habilidade">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

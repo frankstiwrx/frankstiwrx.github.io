@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(90, 13, 122), rgb(21, 24, 202));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1{
+    font-size: 26px;
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+main textarea{
+    width: 600px;
+    height: 200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+}
+
+main textarea::placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+.row{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    gap: 10px;
+}
+
+select{
+    flex: 1;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    border-right: 20px solid transparent;
+}
+
+button{
+    background-color: rgb(255, 125, 60);
+    color: white;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+}

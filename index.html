@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frank William • Desenvolvedor</title>
+  <meta name="description" content="Portfólio de Frank William — Desenvolvedor Web (HTML, CSS, JavaScript, Java) em Sobral-CE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .brand h1 {
+      font-size: 32px; /* tamanho aumentado */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="principal">
+      <a class="brand" href="#top" aria-label="Início">
+        <span class="dot" aria-hidden="true"></span>
+        <h1>Frank William</h1>
+      </a>
+      <nav class="menu" aria-label="Seções">
+        <a href="#projetos" class="active">Projetos</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero" aria-label="Introdução">
+      <div class="hero-wrap">
+        <img src="img/fotoperfil.jpg" width="512" height="512" alt="Foto de perfil de Frank William" class="avatar" />
+        <div>
+          <h2>Desenvolvedor — HTML, CSS, JavaScript & Java</h2>
+          <p>Sobral — CE</p>
+          <div class="tags" aria-label="principais habilidades">
+            <span class="tag">Front‑end</span>
+            <span class="tag">Acessibilidade</span>
+            <span class="tag">Boas práticas</span>
+            <span class="tag">Versionamento Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" aria-label="Projetos">
+      <h3 class="section-title">Projetos em Destaque</h3>
+      <div class="grid">
+        <article class="project" aria-labelledby="calc-title">
+          <div>
+            <header>
+              <h4 id="calc-title" class="project-title">Calculadora</h4>
+              <div class="project-meta">
+                <time datetime="2025">2025</time>
+                <span>•</span>
+                <span>HTML, CSS e JavaScript puro</span>
+              </div>
+            </header>
+            <p>
+              Calculadora web em HTML/CSS/JS com operações básicas ( +, −, ×, ÷ ), ponto decimal e botões AC/DE/00.
+            </p>
+            <div class="skills">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+            </div>
+            <div class="actions">
+              <a class="btn primary" href="projetos/calculadora/" target="_blank" rel="noopener">Ver online</a>
+              <a class="btn" href="https://github.com/frankstiwrx/calculadora" target="_blank" rel="noopener">Código no GitHub</a>
+            </div>
+          </div>
+          <div>
+            <img src="img/thumb-calculadora.png" alt="Interface da Calculadora" style="border-radius: var(--radius); border: 1px solid var(--border);" />
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="julia-title">
+          <div>
+            <header>
+              <h4 id="julia-title" class="project-title">Julia Voice — Leitura em Voz Alta</h4>
+              <div class="project-meta">
+                <time datetime="2025">2025</time>
+                <span>•</span>
+                <span>Web Speech API</span>
+              </div>
+            </header>
+            <p>
+              App onde você digita uma mensagem e o navegador fala.
+            </p>
+            <div class="skills">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Web Speech API</span>
+            </div>
+            <div class="actions">
+              <a class="btn primary" href="projetos/julia-voice/" target="_blank" rel="noopener">Ver online</a>
+              <a class="btn" href="https://github.com/frankstiwrx/julia-voice" target="_blank" rel="noopener">Código no GitHub</a>
+            </div>
+          </div>
+          <div>
+            <img src="img/thumb-julia-voice.png" alt="Interface do Julia Voice" style="border-radius: var(--radius); border: 1px solid var(--border);" />
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="wiki-title">
+          <div>
+            <header>
+              <h4 id="wiki-title" class="project-title">Wiki-Gerbito</h4>
+              <div class="project-meta">
+                <time datetime="2025">2025</time>
+                <span>•</span>
+                <span>Página estilo Wikipedia</span>
+              </div>
+            </header>
+            <p>
+              Página web no estilo Wikipedia dedicada ao jogador fictício Gerbito, com sumário fixo, seções detalhadas e efeitos visuais interativos.
+            </p>
+            <div class="skills">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+            </div>
+            <div class="actions">
+              <a class="btn primary" href="projetos/Wiki-Gerbito/" target="_blank" rel="noopener">Ver online</a>
+              <a class="btn" href="https://github.com/frankstiwrx/Wiki-Gerbito" target="_blank" rel="noopener">Código no GitHub</a>
+            </div>
+          </div>
+          <div>
+            <img src="img/thumb-wiki-gerbito.png" alt="Página estilo Wikipedia do Gerbito" style="border-radius: var(--radius); border: 1px solid var(--border);" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="formacao" aria-label="Formação">
+      <h3 class="section-title">Formação</h3>
+      <div class="edu">
+        <div class="edu-item">
+          <h4>Engenharia de Computação</h4>
+          <p class="where">Universidade Federal do Ceará — Campus Sobral</p>
+        </div>
+        <div class="edu-item">
+          <h4>Cursos e Trilha Dev</h4>
+          <p class="where">Programe.IO — HTML, CSS, JavaScript e projeto Portfólio</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" aria-label="Contato">
+      <h3 class="section-title">Contato</h3>
+      <div class="contact">
+        <a class="link" href="mailto:frankwilliam976@gmail.com">frankwilliam976@gmail.com</a>
+        <a class="link" href="https://www.linkedin.com/in/frank-william-araujo-souza-0b700b23a/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="link" href="https://github.com/frankstiwrx" target="_blank" rel="noopener">GitHub</a>
+        <a class="link btn" href="docs/curriculo_frankwilliam.pdf" download>Baixar currículo (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="y"></span> Frank William. Feito em Sobral‑CE.</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerbito – Wikipédia</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .infobox {
+      width: 270px;
+    }
+    .infobox img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Gerbito</h1>
+
+    <p><strong>Virgil Gerbito Virtonen</strong> (Helsinki, 16 de julho de 2001) é um futebolista finlandês de ascendência inglesa que atua como atacante e ponta e atualmente defende o Norte44 e a Seleção da Finlândia.</p>
+
+    <table class="infobox">
+      <tr>
+        <td colspan="2" style="text-align:center;font-style:italic;">Gerbito atuando pelo Norte44 em 2024</td>
+      </tr>
+      <tr>
+        <td colspan="2"><img src="aaGerbito2024.png" alt="Gerbito" width="220"></td>
+      </tr>
+      <tr>
+        <th colspan="2">Informações pessoais</th>
+      </tr>
+      <tr>
+        <td><strong>Nome completo</strong></td>
+        <td>Virgil Gerbito Virtonen</td>
+      </tr>
+      <tr>
+        <td><strong>Data de nascimento</strong></td>
+        <td>16 de junho de 2001 (23 anos)</td>
+      </tr>
+      <tr>
+        <td><strong>Local de nascimento</strong></td>
+        <td>Helsinki, Uusimaa, Finlândia</td>
+      </tr>
+      <tr>
+        <td><strong>Nacionalidade</strong></td>
+        <td>Finlandês</td>
+      </tr>
+      <tr>
+        <td><strong>Altura</strong></td>
+        <td>1,72 m</td>
+      </tr>
+      <tr>
+        <td><strong>Pé</strong></td>
+        <td>Canhoto</td>
+      </tr>
+      <tr>
+        <td><strong>Apelido</strong></td>
+        <td>Bito<br><em>Suomen Messi</em> (Messi finlandês)</td>
+      </tr>
+      <tr>
+        <th colspan="2">Informações profissionais</th>
+      </tr>
+      <tr>
+        <td><strong>Clube atual</strong></td>
+        <td>Norte44</td>
+      </tr>
+      <tr>
+        <td><strong>Número</strong></td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td><strong>Posição</strong></td>
+        <td>Atacante / Ponta</td>
+      </tr>
+      <tr>
+        <th colspan="2">Clubes de juventude</th>
+      </tr>
+      <tr>
+        <td colspan="2">2008–2016 — Norte44</td>
+      </tr>
+      <tr>
+        <th colspan="2">Clubes profissionais</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table style="width:100%; border-collapse: collapse;">
+            <tr style="background-color:#cedff2; text-align: center;">
+              <th>Anos</th>
+              <th>Clubes</th>
+              <th>Jogos e gol(o)s</th>
+            </tr>
+            <tr style="text-align: center;">
+              <td>2016–</td>
+              <td>Norte44</td>
+              <td>541 (494)</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Seleção nacional</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table style="width:100%; border-collapse: collapse;">
+            <tr style="background-color:#cedff2; text-align: center;">
+              <th>Anos</th>
+              <th>Seleção</th>
+              <th>Jogos e gol(o)s</th>
+            </tr>
+            <tr style="text-align: center;">
+              <td>2015–2017</td>
+              <td>Finlândia (base)</td>
+              <td>23 (18)</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td>2017–</td>
+              <td>Finlândia</td>
+              <td>107 (74)</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Início</h2>
+    <p>Virgil Gerbito Virtonen, ou simplesmente Gerbito, nasceu em Helsinki, capital da região de Uusimaa, Finlândia. Desde cedo demonstrou paixão pelo futebol e começou a jogar nas categorias de base do Norte44 em 2008, com apenas 7 anos de idade. Sua habilidade técnica, velocidade impressionante e finalização apurada rapidamente chamaram atenção. Ao longo de sua infância e adolescência, criou uma forte ligação com o clube, tornando-se símbolo de identificação com a torcida e com o projeto esportivo do Norte44.</p>
+
+    <h2>Carreira no clube</h2>
+    <h3>Norte44</h3>
+    <p>Gerbito fez toda sua formação juvenil no Norte44, desenvolvendo-se como atleta entre 2008 e 2016. Em 2016, aos 15 anos, tornou-se um dos jogadores mais jovens a estrear profissionalmente pelo clube. Desde então, sua trajetória tem sido marcada por atuações decisivas, conquistas históricas e protagonismo constante. Dividindo o protagonismo com Hervisty, Gerbito consolidou-se como um dos maiores ídolos e jogadores da história do Norte44, sendo referência técnica e símbolo do clube tanto em campo quanto fora dele.</p>
+
+    <h2>Carreira internacional</h2>
+    <p>Gerbito começou a defender as seleções de base da Finlândia em 2015, e entre 2015 e 2017 atuou com destaque nas categorias inferiores. Em 2017, foi convocado para a seleção principal, onde rapidamente se firmou como titular. Mesmo com pouca idade, tornou-se uma das principais lideranças técnicas do time e figura entre os maiores artilheiros da história da seleção. Sua presença em campo é marcada por personalidade forte, inteligência tática e decisão nos momentos cruciais.</p>
+
+    <h2>Estilo de jogo</h2>
+    <p>Gerbito é frequentemente comparado a Lionel Messi, seu grande ídolo, devido à sua baixa estatura, agilidade e estilo de condução de bola. Com dribles curtos, mudanças rápidas de direção e alto índice de acerto nas finalizações com a perna esquerda, ele é capaz de quebrar linhas e decidir partidas mesmo sob forte marcação. Sua visão de jogo e tomada de decisão também o tornam um excelente criador de jogadas, sendo fundamental tanto para marcar quanto para assistir companheiros.</p>
+    <ul>
+      <li>Drible curto e acelerado</li>
+      <li>Controle de bola refinado</li>
+      <li>Finalizações precisas com a canhota</li>
+      <li>Alta inteligência tática e leitura de espaços</li>
+      <li>Velocidade em mudanças de direção</li>
+    </ul>
+
+    <h2>Vida pessoal</h2>
+    <p>Gerbito é fluente em finlandês e inglês. Fora dos campos, é uma pessoa reservada e tranquila, com facilidade de convivência e muito respeito entre os colegas. Tem uma amizade sólida com jogadores como Hervisty e Kristian, e costuma aproveitar seu tempo livre jogando videogames e ouvindo rock. É cristão praticante, tendo herdado a fé de sua família e mantendo firme sua espiritualidade. Filho de mãe finlandesa e pai inglês, foi criado somente pela mãe dos 5 aos 13 anos, período que moldou muito de sua personalidade. Apesar disso, mantém forte admiração pelo pai. Teve a possibilidade de representar a seleção da Inglaterra, mas optou pela Finlândia por paixão e identidade com suas raízes. O amor que nutre pelo clube onde foi formado é comparável ao de um torcedor: leal, emotivo e grato. Aos 23 anos, já é reconhecido como um dos maiores nomes da história do Norte44.
+
+    <h2>Títulos</h2>
+    <ul>
+      <li><strong>Norte44</strong>
+        <ul>
+          <li>Veikkausliiga: 2016–17, 2017–18, 2018–19, 2020–21, 2022–23, 2023–24, 2024–25</li>
+          <li>Soumen Super League: 2017, 2018, 2022, 2024, 2025</li>
+          <li>HSL (Helsinki Soccer League): 2017, 2024, 2025</li>
+          <li>Helsinki Gold Series: 2016, 2020, 2023, 2024</li>
+          <li>Pohjolan Cup: 2018, 2023</li>
+          <li>3F Superliga (Dinamarca): 2023, 2024</li>
+          <li>Sydbank Pokalen: 2023, 2024</li>
+          <li>Liga Europa da UEFA: 2017–18, 2022–23, 2024–25</li>
+          <li>Supercopa da UEFA: 2018, 2019, 2021, 2024, 2025</li>
+          <li>Liga dos Campeões da UEFA: 2018–19, 2020–21, 2023–24</li>
+          <li>Copa do Mundo de Clubes da FIFA: 2019, 2021, 2024</li>
+        </ul>
+      </li>
+      <li><strong>Finlândia</strong>
+        <ul>
+          <li>Eurocopa: 2021, 2024</li>
+          <li>Liga das Nações da UEFA: 2023</li>
+          <li>Copa do Mundo da FIFA: 2022</li>
+          <li>Copa Nórdica: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024</li>
+          <li>Torneio de Helsinque: 2018, 2020, 2022</li>
+          <li>Supercopa das Nações: 2022</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Prêmios individuais</h3>
+    <ul>
+      <li>Melhor jogador finlandês: 2019, 2020, 2022, 2023</li>
+      <li>Jovem revelação da temporada (Veikkausliiga): 2017</li>
+      <li>Artilheiro da Veikkausliiga: 2018, 2020, 2022</li>
+      <li>Artilheiro da Liga Europa da UEFA: 2022–23, 2024–25</li>
+      <li>Artilheiro da Liga dos Campeões da UEFA: 2020–21, 2023–24</li>
+      <li>Chuteira de Ouro da Europa: 2020, 2023</li>
+      <li>Melhor jogador da final da Liga dos Campeões da UEFA: 2021, 2024</li>
+      <li>Jogador do Ano da UEFA: 2021, 2023</li>
+      <li>Bola de Ouro (Ballon d'Or): 2019, 2021, 2023</li>
+      <li>11 ideal da FIFA/FIFPro: 2019, 2020, 2021, 2022, 2023</li>
+      <li>Prêmio Puskás (melhor gol do ano): 2019</li>
+      <li>Melhor jogador da Copa do Mundo da FIFA: 2022</li>
+      <li>Jogador do Torneio – Eurocopa: 2024</li>
+      <li>Capitão do Time do Ano – Copa Nórdica: 2023</li>
+      <li>Ícone do futebol finlandês – Federação Finlandesa de Futebol: 2025</li>
+    </ul>
+
+    <h3>Artilharias</h3>
+    <ul>
+      <li>Veikkausliiga: 2018, 2020, 2022, 2023</li>
+      <li>Soumen Super League: 2017, 2022, 2025</li>
+      <li>HSL: 2017, 2024</li>
+      <li>Helsinki Gold Series: 2020, 2024</li>
+      <li>Pohjolan Cup: 2018, 2023</li>
+      <li>3F Superliga: 2024</li>
+      <li>Liga Europa da UEFA: 2022–23, 2024–25</li>
+      <li>Liga dos Campeões da UEFA: 2020–21, 2023–24</li>
+      <li>Copa do Mundo de Clubes da FIFA: 2019, 2021, 2024</li>
+      <li>Eurocopa: 2024</li>
+      <li>Copa do Mundo da FIFA: 2022</li>
+      <li>Copa Nórdica: 2021, 2022, 2023</li>
+      <li>Supercopa da UEFA: 2018, 2024</li>
+    </ul>
+
+  </div>
+</body>
+</html>
