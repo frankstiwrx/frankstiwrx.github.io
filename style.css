@@ -401,3 +401,29 @@ section, [id] { scroll-margin-top: 82px; }
   .btn { width: 100%; justify-content: center; }
   .project .actions { flex-direction: column; }
 }
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;   /* empilha os itens */
+    align-items: center;
+    gap: 8px;                 /* espaço entre nome e menu */
+    height: auto;             /* libera altura automática */
+    padding: 10px 0;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .brand h1 {
+    font-size: 18px;          /* reduz tamanho no celular */
+    white-space: normal;      /* deixa quebrar se precisar */
+    text-align: center;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;          /* menu pode quebrar em 2 linhas */
+    gap: 10px;
+  }
+}
