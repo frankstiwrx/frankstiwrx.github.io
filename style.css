@@ -342,3 +342,62 @@ footer { padding: 30px 0 60px; color: var(--subtext); text-align: center; }
 @media (min-width: 720px) {
   .project { grid-template-columns: 1.1fr .9fr; align-items: start; }
 }
+
+/* ====== FIX MOBILE (cola no final do CSS) ====== */
+
+/* Garantir que nada vaze horizontalmente */
+html, body { overflow-x: hidden; }
+
+/* Seções não ficarem escondidas sob o header sticky */
+section, [id] { scroll-margin-top: 82px; }
+
+/* Imagens dos cards com borda e raio consistente */
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* Hero: virar 1 coluna e reduzir espaçamentos no mobile */
+@media (max-width: 600px) {
+  .hero { padding: 48px 0 24px; }
+  .hero-wrap { grid-template-columns: 1fr; gap: 14px; }
+  .avatar { max-width: 160px; margin: 0 auto; }
+  .hero h2 { font-size: clamp(22px, 7vw, 32px); }
+  .hero p { font-size: 14px; }
+  .tags { gap: 6px; }
+  .tag { padding: 4px 8px; font-size: 12px; }
+}
+
+/* Grid principal: garante 1 coluna e remove qualquer “aperto” */
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; gap: 12px; }
+  .project { padding: 14px; }
+  .project-title { font-size: 16px; }
+  .project p { font-size: 14px; }
+}
+
+/* Metadados e botões não quebrarem layout */
+@media (max-width: 520px) {
+  .project-meta { flex-wrap: wrap; gap: 6px 10px; font-size: 12px; }
+  .project .skills { gap: 6px; }
+  .project .skills .chip { font-size: 11px; padding: 3px 7px; }
+  .project .actions { gap: 8px; }
+  .btn { padding: 9px 12px; font-size: 14px; }
+}
+
+/* Header/menu mais compacto em telas pequenas */
+@media (max-width: 560px) {
+  .nav { height: 60px; }
+  .brand h1 { font-size: 16px; }
+  .menu { gap: 10px; }
+  .menu a { padding: 8px 10px; font-size: 13px; }
+}
+
+/* Microajustes para telas muito pequenas */
+@media (max-width: 380px) {
+  .container { padding: 0 14px; }
+  .btn { width: 100%; justify-content: center; }
+  .project .actions { flex-direction: column; }
+}
