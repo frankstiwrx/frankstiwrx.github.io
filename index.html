@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Frank William • Desenvolvedor</title>
     <meta
       name="description"
-      content="Portfólio de Frank William — Desenvolvedor Web (HTML, CSS, JavaScript, Java) em Sobral-CE."
+      content="Portfólio de Frank William - Desenvolvedor Web (HTML, CSS, JavaScript, Java) em Sobral-CE."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
           <h1>Frank William</h1>
         </a>
         <nav class="menu" aria-label="Seções">
-          <a href="#projetos" class="active">Projetos</a>
+          <a href="#projetos">Projetos</a>
           <a href="#formacao">Formação</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -41,24 +41,31 @@
       <section class="hero" aria-label="Introdução">
         <div class="hero-wrap">
           <img
-            src="img/fotoperfil.jpg"
+            src="img/fotoperfil2.jpg"
             width="512"
             height="512"
             alt="Foto de perfil de Frank William"
             class="avatar"
           />
           <div>
-            <h2>Desenvolvedor — HTML, CSS, JavaScript & Java</h2>
-            <p>Sobral — CE</p>
+            <h2>Desenvolvedor - HTML, CSS, JavaScript & Java</h2>
+            <p>Sobral - CE</p>
             <div class="tags" aria-label="principais habilidades">
-              <span class="tag">Front-end</span>
+              <span class="tag">Full-stack</span>
               <span class="tag">JavaScript</span>
               <span class="tag">TypeScript</span>
               <span class="tag">React</span>
               <span class="tag">Next.js</span>
-              <span class="tag">TailwindCSS</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Git</span>
+              <span class="tag">Kotlin</span>
+              <span class="tag">ESP32 / C++</span>
               <span class="tag">Acessibilidade</span>
-              <span class="tag">Versionamento Git</span>
             </div>
           </div>
         </div>
@@ -67,6 +74,59 @@
       <section id="projetos" aria-label="Projetos">
         <h3 class="section-title">Projetos em Destaque</h3>
         <div class="grid">
+          <article class="project" aria-labelledby="vibrotatil-title">
+            <div>
+              <header>
+                <h4 id="vibrotatil-title" class="project-title">
+                  Sistema de Navegação Vibrotátil
+                </h4>
+                <div class="project-meta">
+                  <time datetime="2026">2026</time>
+                  <span>•</span>
+                  <span>Kotlin, ESP32, C++, BLE e Google Maps</span>
+                </div>
+              </header>
+              <p>
+                Trabalho de Conclusão de Curso voltado à mobilidade de pessoas
+                com deficiência visual. O sistema integra um aplicativo Android
+                desenvolvido em <strong>Kotlin</strong> com uma
+                <strong>ESP32</strong> por meio de Bluetooth Low Energy,
+                processando localização, distância e direção para gerar feedback
+                vibrotátil direcional.
+              </p>
+              <div class="skills">
+                <span class="chip">Kotlin</span>
+                <span class="chip">Android</span>
+                <span class="chip">ESP32</span>
+                <span class="chip">C++</span>
+                <span class="chip">BLE</span>
+                <span class="chip">Google Maps</span>
+                <span class="chip">Arduino</span>
+                <span class="chip">PlatformIO</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/sistema-navegacao-vibrotatil-tcc"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/tccvibracional.png"
+                alt="Protótipo ESP32, aplicativo Android e simulação do sistema de navegação vibrotátil"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+
           <article class="project" aria-labelledby="ecommercefull-title">
             <div>
               <header>
@@ -126,146 +186,51 @@
             </div>
           </article>
 
-          <article class="project" aria-labelledby="calc-title">
+          <article class="project" aria-labelledby="imagelab-title">
             <div>
               <header>
-                <h4 id="calc-title" class="project-title">Calculadora</h4>
+                <h4 id="imagelab-title" class="project-title">
+                  ImageLab AI - Gerador de Imagens
+                </h4>
                 <div class="project-meta">
-                  <time datetime="2025">2025</time>
+                  <time datetime="2026">2026</time>
                   <span>•</span>
-                  <span>HTML, CSS e JavaScript puro</span>
+                  <span>Node.js, Express, JavaScript e OpenAI API</span>
                 </div>
               </header>
               <p>
-                Calculadora web em HTML/CSS/JS com operações básicas ( +, −, ×,
-                ÷ ), ponto decimal e botões AC/DE/00.
+                Aplicação web para geração de imagens por inteligência
+                artificial a partir de prompts de texto. O frontend envia as
+                solicitações para um backend em
+                <strong>Node.js + Express</strong>, responsável pela integração
+                segura com a <strong>OpenAI Images API</strong>, mantendo a
+                chave protegida em variáveis de ambiente.
               </p>
               <div class="skills">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">OpenAI API</span>
                 <span class="chip">HTML</span>
                 <span class="chip">CSS</span>
-                <span class="chip">JavaScript</span>
+                <span class="chip">REST API</span>
+                <span class="chip">Basic Auth</span>
               </div>
               <div class="actions">
                 <a
-                  class="btn primary"
-                  href="projetos/calculadora/"
-                  target="_blank"
-                  rel="noopener"
-                  >Ver online</a
-                >
-                <a
                   class="btn"
-                  href="https://github.com/frankstiwrx/calculadora"
+                  href="https://github.com/frankstiwrx/imagelab-ai"
                   target="_blank"
                   rel="noopener"
-                  >Código no GitHub</a
                 >
+                  Código no GitHub
+                </a>
               </div>
             </div>
             <div>
               <img
-                src="img/thumb-calculadora.png"
-                alt="Interface da Calculadora"
-                style="
-                  border-radius: var(--radius);
-                  border: 1px solid var(--border);
-                "
-              />
-            </div>
-          </article>
-
-          <article class="project" aria-labelledby="julia-title">
-            <div>
-              <header>
-                <h4 id="julia-title" class="project-title">
-                  Julia Voice — Leitura em Voz Alta
-                </h4>
-                <div class="project-meta">
-                  <time datetime="2025">2025</time>
-                  <span>•</span>
-                  <span>Web Speech API</span>
-                </div>
-              </header>
-              <p>App onde você digita uma mensagem e o navegador fala.</p>
-              <div class="skills">
-                <span class="chip">HTML</span>
-                <span class="chip">CSS</span>
-                <span class="chip">JavaScript</span>
-                <span class="chip">Web Speech API</span>
-              </div>
-              <div class="actions">
-                <a
-                  class="btn primary"
-                  href="projetos/julia-voice/"
-                  target="_blank"
-                  rel="noopener"
-                  >Ver online</a
-                >
-                <a
-                  class="btn"
-                  href="https://github.com/frankstiwrx/julia-voice"
-                  target="_blank"
-                  rel="noopener"
-                  >Código no GitHub</a
-                >
-              </div>
-            </div>
-            <div>
-              <img
-                src="img/thumb-julia-voice.png"
-                alt="Interface do Julia Voice"
-                style="
-                  border-radius: var(--radius);
-                  border: 1px solid var(--border);
-                "
-              />
-            </div>
-          </article>
-
-          <article class="project" aria-labelledby="taskdashboard-title">
-            <div>
-              <header>
-                <h4 id="taskdashboard-title" class="project-title">
-                  Task Dashboard
-                </h4>
-                <div class="project-meta">
-                  <time datetime="2025">2025</time>
-                  <span>•</span>
-                  <span>Next.js, TypeScript e TailwindCSS</span>
-                </div>
-              </header>
-              <p>
-                Aplicação web para gerenciamento de tarefas com listas,
-                prioridades e persistência local. Permite criar múltiplas listas
-                (ex: Trabalho, Estudos) e organizar tarefas por prioridade
-                (Urgente, Alta, Normal, Baixa).
-              </p>
-              <div class="skills">
-                <span class="chip">Next.js</span>
-                <span class="chip">TypeScript</span>
-                <span class="chip">TailwindCSS</span>
-              </div>
-              <div class="actions">
-                <a
-                  class="btn primary"
-                  href="https://task-dashboard-delta-six.vercel.app/"
-                  target="_blank"
-                  rel="noopener"
-                  >Ver online</a
-                >
-                <a
-                  class="btn"
-                  href="https://github.com/frankstiwrx/tasks-dashboard-next"
-                  target="_blank"
-                  rel="noopener"
-                  >Código no GitHub</a
-                >
-              </div>
-            </div>
-            <div>
-              <img
-                src="img/thumb-taskdashboard.png"
-                alt="Interface do Task Dashboard com listas e prioridades"
+                src="img/imagelab.png"
+                alt="Interface do ImageLab AI para geração de imagens por inteligência artificial"
                 style="
                   border-radius: var(--radius);
                   border: 1px solid var(--border);
@@ -299,14 +264,6 @@
               </div>
               <div class="actions">
                 <a
-                  class="btn disabled"
-                  href="#"
-                  aria-disabled="true"
-                  style="pointer-events: none; opacity: 0.6"
-                >
-                  Ver online (indisponível)
-                </a>
-                <a
                   class="btn"
                   href="https://github.com/frankstiwrx/ecommerce-nest-prisma"
                   target="_blank"
@@ -328,6 +285,263 @@
             </div>
           </article>
 
+          <article class="project" aria-labelledby="taskdashboard-title">
+            <div>
+              <header>
+                <h4 id="taskdashboard-title" class="project-title">
+                  Task Dashboard
+                </h4>
+                <div class="project-meta">
+                  <time datetime="2025">2025</time>
+                  <span>•</span>
+                  <span>Next.js, TypeScript e TailwindCSS</span>
+                </div>
+              </header>
+              <p>
+                Aplicação web para gerenciamento de tarefas com listas,
+                prioridades e persistência local. Permite criar múltiplas listas
+                e organizar tarefas por prioridade.
+              </p>
+              <div class="skills">
+                <span class="chip">Next.js</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">TailwindCSS</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://task-dashboard-delta-six.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Ver online
+                </a>
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/tasks-dashboard-next"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/thumb-taskdashboard.png"
+                alt="Interface do Task Dashboard com listas e prioridades"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+        </div>
+
+        <h3 class="section-title" style="margin-top: 64px">Outros Projetos</h3>
+
+        <div class="grid">
+          <article class="project" aria-labelledby="burgerio-title">
+            <div>
+              <header>
+                <h4 id="burgerio-title" class="project-title">
+                  Burger.IO - Cardápio Digital PWA
+                </h4>
+                <div class="project-meta">
+                  <time datetime="2026">2026</time>
+                  <span>•</span>
+                  <span>HTML, CSS, JavaScript e PWA</span>
+                </div>
+              </header>
+              <p>
+                Cardápio digital responsivo para hamburgueria com listagem de
+                produtos, página de detalhes e fluxo de confirmação de pedido. O
+                projeto utiliza <strong>JavaScript</strong>, Web App Manifest e
+                <strong>Service Worker</strong> para incorporar recursos de uma
+                Progressive Web App.
+              </p>
+              <div class="skills">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">PWA</span>
+                <span class="chip">Service Worker</span>
+                <span class="chip">Web Manifest</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/burger-io"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/burgerio.png"
+                alt="Interface do cardápio digital Burger.IO"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="roupaio-title">
+            <div>
+              <header>
+                <h4 id="roupaio-title" class="project-title">
+                  Roupa.IO - E-commerce de Moda
+                </h4>
+                <div class="project-meta">
+                  <time datetime="2026">2026</time>
+                  <span>•</span>
+                  <span>HTML, CSS e Bootstrap</span>
+                </div>
+              </header>
+              <p>
+                Interface responsiva de uma loja virtual de moda desenvolvida
+                com <strong>Bootstrap 5</strong>, combinando carrosséis,
+                catálogo de produtos, navegação por categorias, newsletter e
+                componentes adaptáveis para diferentes tamanhos de tela.
+              </p>
+              <div class="skills">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">Bootstrap 5</span>
+                <span class="chip">Bootstrap Icons</span>
+                <span class="chip">Responsive Design</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/roupa-io"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/roupaio.png"
+                alt="Interface responsiva do e-commerce de moda Roupa.IO"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="netflix-title">
+            <div>
+              <header>
+                <h4 id="netflix-title" class="project-title">
+                  Interface Inspirada na Netflix
+                </h4>
+                <div class="project-meta">
+                  <time datetime="2026">2026</time>
+                  <span>•</span>
+                  <span>HTML, JavaScript e Tailwind CSS</span>
+                </div>
+              </header>
+              <p>
+                Projeto front-end inspirado em uma plataforma de streaming, com
+                telas de login, seleção de perfil, catálogo e reprodução. A
+                interface foi construída utilizando
+                <strong>Tailwind CSS</strong>, com foco em composição visual,
+                navegação e responsividade.
+              </p>
+              <div class="skills">
+                <span class="chip">HTML</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Tailwind CSS</span>
+                <span class="chip">Responsive Design</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/projeto-netflix"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/netflix.png"
+                alt="Interface de streaming inspirada na Netflix desenvolvida com Tailwind CSS"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="julia-title">
+            <div>
+              <header>
+                <h4 id="julia-title" class="project-title">
+                  Julia Voice - Leitura em Voz Alta
+                </h4>
+                <div class="project-meta">
+                  <time datetime="2025">2025</time>
+                  <span>•</span>
+                  <span>Web Speech API</span>
+                </div>
+              </header>
+              <p>
+                Aplicação web em que o usuário digita uma mensagem e o navegador
+                realiza a leitura em voz alta utilizando a
+                <strong>Web Speech API</strong>.
+              </p>
+              <div class="skills">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Web Speech API</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="projetos/julia-voice/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Ver online
+                </a>
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/julia-voice"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/thumb-julia-voice.png"
+                alt="Interface do Julia Voice"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+
           <article class="project" aria-labelledby="wiki-title">
             <div>
               <header>
@@ -335,7 +549,7 @@
                 <div class="project-meta">
                   <time datetime="2025">2025</time>
                   <span>•</span>
-                  <span>Página estilo Wikipedia</span>
+                  <span>HTML, CSS e JavaScript</span>
                 </div>
               </header>
               <p>
@@ -354,21 +568,119 @@
                   href="projetos/Wiki-Gerbito/"
                   target="_blank"
                   rel="noopener"
-                  >Ver online</a
                 >
+                  Ver online
+                </a>
                 <a
                   class="btn"
                   href="https://github.com/frankstiwrx/Wiki-Gerbito"
                   target="_blank"
                   rel="noopener"
-                  >Código no GitHub</a
                 >
+                  Código no GitHub
+                </a>
               </div>
             </div>
             <div>
               <img
                 src="img/thumb-wiki-gerbito.png"
                 alt="Página estilo Wikipedia do Gerbito"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="calculadoraimc-title">
+            <div>
+              <header>
+                <h4 id="calculadoraimc-title" class="project-title">
+                  Calculadora de IMC
+                </h4>
+                <div class="project-meta">
+                  <time datetime="2026">2026</time>
+                  <span>•</span>
+                  <span>HTML, CSS e JavaScript</span>
+                </div>
+              </header>
+              <p>
+                Aplicação web responsiva para cálculo do Índice de Massa
+                Corporal a partir da altura e do peso informados pelo usuário,
+                com validação de dados e classificação automática do resultado.
+              </p>
+              <div class="skills">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Responsive Design</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/calculadora-imc"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/calculadoraimc.png"
+                alt="Interface da calculadora de IMC"
+                style="
+                  border-radius: var(--radius);
+                  border: 1px solid var(--border);
+                "
+              />
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="calc-title">
+            <div>
+              <header>
+                <h4 id="calc-title" class="project-title">Calculadora</h4>
+                <div class="project-meta">
+                  <time datetime="2025">2025</time>
+                  <span>•</span>
+                  <span>HTML, CSS e JavaScript puro</span>
+                </div>
+              </header>
+              <p>
+                Calculadora web em HTML/CSS/JS com operações básicas (+, −, ×,
+                ÷), ponto decimal e botões AC/DE/00.
+              </p>
+              <div class="skills">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="projetos/calculadora/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Ver online
+                </a>
+                <a
+                  class="btn"
+                  href="https://github.com/frankstiwrx/calculadora"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código no GitHub
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/thumb-calculadora.png"
+                alt="Interface da Calculadora"
                 style="
                   border-radius: var(--radius);
                   border: 1px solid var(--border);
@@ -384,13 +696,11 @@
         <div class="edu">
           <div class="edu-item">
             <h4>Engenharia de Computação</h4>
-            <p class="where">Universidade Federal do Ceará — Campus Sobral</p>
+            <p class="where">Universidade Federal do Ceará - Campus Sobral</p>
           </div>
           <div class="edu-item">
             <h4>Cursos e Trilha Dev</h4>
-            <p class="where">
-              Programe.IO — HTML, CSS, JavaScript e projeto Portfólio
-            </p>
+            <p class="where">Programe.IO - HTML, CSS, JavaScript</p>
           </div>
         </div>
       </section>
