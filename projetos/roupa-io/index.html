@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Roupa.IO — vitrine responsiva de moda criada com Bootstrap."
+    />
+    <title>Roupa.IO | Moda & Estilo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <section class="topbar">
+      <div
+        class="container-xl d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-2"
+      >
+        <span>
+          <i class="bi bi-truck me-2"></i>
+          Frete grátis acima de R$ 199
+        </span>
+
+        <div class="d-flex align-items-center gap-3">
+          <span>
+            <i class="bi bi-arrow-repeat me-1"></i>
+            Troca fácil
+          </span>
+          <span class="topbar-divider"></span>
+          <span>
+            <i class="bi bi-shield-check me-1"></i>
+            Compra segura
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-xl">
+        <a class="navbar-brand brand-logo" href="#"> Roupa<span>.IO</span> </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0 gap-lg-2">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Masculino
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm">
+                <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                <li><a class="dropdown-item" href="#">Calças</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Feminino
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm">
+                <li><a class="dropdown-item" href="#">Blusas</a></li>
+                <li><a class="dropdown-item" href="#">Vestidos</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Infantil
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm">
+                <li><a class="dropdown-item" href="#">Meninos</a></li>
+                <li><a class="dropdown-item" href="#">Meninas</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#lancamentos">Lançamentos</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions d-flex align-items-center gap-3">
+            <form class="search-box d-none d-xl-flex" role="search">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                placeholder="Buscar produtos"
+                aria-label="Buscar produtos"
+              />
+            </form>
+
+            <button class="icon-button" type="button" aria-label="Favoritos">
+              <i class="bi bi-heart"></i>
+            </button>
+
+            <button class="icon-button" type="button" aria-label="Carrinho">
+              <i class="bi bi-bag"></i>
+            </button>
+
+            <div class="dropdown">
+              <button
+                class="profile-button dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="images/profile.png" alt="Perfil do usuário" />
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm">
+                <li><a class="dropdown-item" href="#">Meu perfil</a></li>
+                <li><a class="dropdown-item" href="#">Meus pedidos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO CAROUSEL -->
+    <section class="hero-section">
+      <div
+        id="mainCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/1.png"
+              class="d-block w-100 hero-image"
+              alt="Coleção em destaque"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/2.png"
+              class="d-block w-100 hero-image"
+              alt="Novidades da loja"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/3.png"
+              class="d-block w-100 hero-image"
+              alt="Seleção de moda"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- LANÇAMENTOS -->
+    <section id="lancamentos" class="products-section">
+      <div class="container-xl">
+        <div class="section-heading text-center">
+          <span class="eyebrow">NOVA COLEÇÃO</span>
+          <h1>Últimos lançamentos</h1>
+          <p>Peças selecionadas para atualizar o seu estilo.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card h-100">
+              <div class="product-image-wrap">
+                <span class="product-badge">Novo</span>
+                <img
+                  src="images/card01.png"
+                  class="product-image"
+                  alt="Blusa rosa"
+                />
+                <button
+                  class="favorite-btn"
+                  type="button"
+                  aria-label="Favoritar produto"
+                >
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+
+              <div class="product-body">
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>5.0</span>
+                </div>
+                <h2>Blusa Essential</h2>
+                <p class="product-category">Coleção casual</p>
+                <div class="product-footer">
+                  <strong>R$ 249,90</strong>
+                  <button class="buy-btn" type="button">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card h-100">
+              <div class="product-image-wrap">
+                <span class="product-badge">Destaque</span>
+                <img
+                  src="images/card02.png"
+                  class="product-image"
+                  alt="Blusa urbana"
+                />
+                <button
+                  class="favorite-btn"
+                  type="button"
+                  aria-label="Favoritar produto"
+                >
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+
+              <div class="product-body">
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.9</span>
+                </div>
+                <h2>Blusa Urban</h2>
+                <p class="product-category">Linha contemporânea</p>
+                <div class="product-footer">
+                  <strong>R$ 229,90</strong>
+                  <button class="buy-btn" type="button">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card h-100">
+              <div class="product-image-wrap">
+                <span class="product-badge">Trend</span>
+                <img
+                  src="images/card03.png"
+                  class="product-image"
+                  alt="Blusa moderna"
+                />
+                <button
+                  class="favorite-btn"
+                  type="button"
+                  aria-label="Favoritar produto"
+                >
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+
+              <div class="product-body">
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.8</span>
+                </div>
+                <h2>Blusa Aura</h2>
+                <p class="product-category">Estilo minimalista</p>
+                <div class="product-footer">
+                  <strong>R$ 259,90</strong>
+                  <button class="buy-btn" type="button">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card h-100">
+              <div class="product-image-wrap">
+                <span class="product-badge">Favorito</span>
+                <img
+                  src="images/card04.png"
+                  class="product-image"
+                  alt="Blusa clássica"
+                />
+                <button
+                  class="favorite-btn"
+                  type="button"
+                  aria-label="Favoritar produto"
+                >
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+
+              <div class="product-body">
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>5.0</span>
+                </div>
+                <h2>Blusa Classic</h2>
+                <p class="product-category">Essenciais Roupa.IO</p>
+                <div class="product-footer">
+                  <strong>R$ 239,90</strong>
+                  <button class="buy-btn" type="button">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER SECUNDÁRIO -->
+    <section class="secondary-banner">
+      <div class="container-xl">
+        <div id="secondaryCarousel" class="carousel slide overflow-hidden">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/3.png"
+                class="d-block w-100 secondary-image"
+                alt="Destaque Roupa.IO"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/2.png"
+                class="d-block w-100 secondary-image"
+                alt="Coleção Roupa.IO"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/1.png"
+                class="d-block w-100 secondary-image"
+                alt="Moda Roupa.IO"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#secondaryCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#secondaryCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / SITE MAP -->
+    <section class="site-map">
+      <div class="container-xl">
+        <div class="row g-5">
+          <div class="col-6 col-md-3">
+            <h3>Departamentos</h3>
+            <div class="footer-links">
+              <a href="#">Masculino</a>
+              <a href="#">Feminino</a>
+              <a href="#">Infantil</a>
+              <a href="#">Lançamentos</a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <h3>Ajuda</h3>
+            <div class="footer-links">
+              <a href="#">Meus pedidos</a>
+              <a href="#">Trocas e devoluções</a>
+              <a href="#">Formas de pagamento</a>
+              <a href="#">Atendimento</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <span class="eyebrow">NEWSLETTER</span>
+            <h3 class="newsletter-title">Novidades direto no seu e-mail</h3>
+            <p class="newsletter-text">
+              Receba lançamentos, tendências e ofertas da Roupa.IO.
+            </p>
+
+            <div class="newsletter-form">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="seuemail@exemplo.com"
+                aria-label="Seu e-mail"
+              />
+              <button class="btn newsletter-btn" type="button">
+                Quero receber
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div
+        class="container-xl d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+      >
+        <div>
+          <strong class="footer-brand">Roupa.IO</strong>
+          <span class="footer-copy"> • Projeto front-end 2026</span>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

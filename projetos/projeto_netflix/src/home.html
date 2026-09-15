@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Netflix - Início</title>
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="bg-black text-white">
+    <header
+      class="flex items-center justify-between px-12 py-5 absolute top-0 left-0 w-full z-20"
+    >
+      <!-- Lado esquerdo -->
+      <div class="flex items-center gap-10">
+        <h1 class="text-red-600 text-4xl font-black">NETFLIX</h1>
+
+        <nav>
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a href="#" class="font-bold"> Início </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-zinc-300 hover:text-white"> Séries </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-zinc-300 hover:text-white"> Filmes </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-zinc-300 hover:text-white"> Bombando </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-zinc-300 hover:text-white">
+                Minha lista
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-zinc-300 hover:text-white">
+                Navegar por idiomas
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Lado direito -->
+      <div class="flex items-center gap-5">
+        <!-- Busca -->
+        <button class="text-white hover:text-zinc-300" title="Pesquisar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"
+            />
+          </svg>
+        </button>
+
+        <!-- Infantil -->
+        <a href="#" class="text-sm text-zinc-200 hover:text-white">
+          Infantil
+        </a>
+
+        <!-- Notificações -->
+        <button class="text-white hover:text-zinc-300" title="Notificações">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 1 0-12 0v3.2a2 2 0 0 1-.6 1.4L4 17h5m6 0a3 3 0 0 1-6 0"
+            />
+          </svg>
+        </button>
+
+        <!-- Perfil -->
+        <div class="relative group">
+          <button class="flex items-center gap-2">
+            <img
+              src="./assets/profile1.jpg"
+              alt="Perfil"
+              class="w-9 h-9 rounded object-cover"
+            />
+
+            <span class="text-xs"> ▼ </span>
+          </button>
+
+          <!-- Dropdown -->
+          <div
+            class="absolute right-0 top-11 w-44 bg-black/90 border border-zinc-700 hidden group-hover:block text-sm"
+          >
+            <a href="./profile.html" class="block px-4 py-3 hover:bg-zinc-800">
+              Trocar perfil
+            </a>
+
+            <a href="./index.html" class="block px-4 py-3 hover:bg-zinc-800">
+              Sair da Netflix
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative min-h-[650px] flex items-center px-12 bg-cover bg-center"
+      style="background-image: url(&quot;./assets/banner.jpeg&quot;)"
+    >
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"
+      ></div>
+
+      <!-- Conteúdo -->
+      <div class="relative z-10 max-w-xl">
+        <p class="text-red-600 font-bold text-xl mb-2">N SÉRIE</p>
+
+        <h2 class="text-6xl font-black mb-5">STRANGER THINGS</h2>
+
+        <p class="text-lg text-zinc-200 leading-relaxed mb-6">
+          Quando um garoto desaparece, uma pequena cidade descobre um mistério
+          envolvendo experimentos secretos, forças sobrenaturais e uma garota
+          muito especial.
+        </p>
+
+        <div class="flex gap-3">
+          <a
+            href="./watch.html"
+            class="bg-white text-black font-bold px-7 py-3 rounded hover:bg-white/80"
+          >
+            ▶ Assistir
+          </a>
+
+          <button
+            class="bg-zinc-500/70 text-white font-bold px-7 py-3 rounded hover:bg-zinc-500/50"
+          >
+            ⓘ Mais informações
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-12 py-10">
+      <h2 class="text-2xl font-bold mb-5">Populares na Netflix</h2>
+
+      <div
+        id="populares"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+      ></div>
+    </section>
+
+    <section class="px-12 pb-12">
+      <h2 class="text-2xl font-bold mb-5">Em alta</h2>
+
+      <div
+        id="em-alta"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+      ></div>
+    </section>
+
+    <script src="./home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+const loginForm = document.getElementById("login-form");
+
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (email === "" || password === "") {
+    alert("Preencha o email e a senha.");
+    return;
+  }
+
+  window.location.href = "./profile.html";
+});

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Netflix</title>
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- Página inteira -->
+    <div
+      class="min-h-screen bg-cover bg-center bg-no-repeat relative"
+      style="background-image: url(&quot;./assets/netflix-bg.jpeg&quot;)"
+    >
+      <!-- Camada escura sobre a imagem -->
+      <div class="absolute inset-0 bg-black/35"></div>
+
+      <!-- Conteúdo -->
+      <div class="relative z-10">
+        <!-- Header -->
+        <header class="px-6 md:px-12 lg:px-16 py-6">
+          <h1
+            class="text-red-600 text-4xl md:text-5xl font-black tracking-tight"
+          >
+            NETFLIX
+          </h1>
+        </header>
+
+        <!-- Login -->
+        <main
+          class="min-h-[680px] flex items-start md:items-center justify-center px-4 pb-20"
+        >
+          <section
+            class="bg-black/60 backdrop-blur-[2px] w-full max-w-[450px] px-7 md:px-14 py-12 md:py-14 rounded"
+          >
+            <h2 class="text-3xl font-bold mb-8">Entrar</h2>
+
+            <form id="login-form" class="flex flex-col gap-4">
+              <!-- Email -->
+              <div>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email ou número de telefone"
+                  class="w-full bg-zinc-700/90 text-white placeholder:text-zinc-300 px-5 py-4 rounded outline-none"
+                />
+
+                <p class="text-orange-400 text-xs mt-1 hidden">
+                  Informe um email ou número de telefone válido.
+                </p>
+              </div>
+
+              <!-- Senha -->
+              <input
+                id="password"
+                type="password"
+                placeholder="Senha"
+                class="w-full bg-zinc-700/90 text-white placeholder:text-zinc-300 px-5 py-4 rounded outline-none"
+              />
+
+              <!-- Botão -->
+              <button
+                type="submit"
+                class="bg-red-600 hover:bg-red-700 transition duration-200 text-white font-bold py-3 rounded mt-5"
+              >
+                Entrar
+              </button>
+
+              <!-- Checkbox e ajuda -->
+              <div
+                class="flex items-center justify-between text-zinc-400 text-sm"
+              >
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" class="accent-zinc-500" />
+
+                  <span> Lembre-se de mim </span>
+                </label>
+
+                <a href="#" class="hover:underline"> Precisa de ajuda? </a>
+              </div>
+            </form>
+
+            <!-- Informações -->
+            <div class="mt-16 text-zinc-400 text-sm">
+              <p>
+                Novo por aqui?
+
+                <a href="#" class="text-white hover:underline">
+                  Assine agora.
+                </a>
+              </p>
+
+              <p class="text-xs mt-4 leading-5 text-zinc-400">
+                Esta página é protegida pelo Google reCAPTCHA para garantir que
+                você não é um robô.
+              </p>
+
+              <a href="#" class="text-blue-500 text-xs hover:underline">
+                Saiba mais.
+              </a>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-black/80 text-zinc-400 py-10">
+          <div class="max-w-5xl mx-auto px-6 md:px-12">
+            <p class="mb-8">Dúvidas? Ligue 0800 591 2876</p>
+
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-4 text-sm"
+            >
+              <a href="#" class="hover:underline"> Perguntas frequentes </a>
+
+              <a href="#" class="hover:underline"> Central de Ajuda </a>
+
+              <a href="#" class="hover:underline"> Termos de Uso </a>
+
+              <a href="#" class="hover:underline"> Privacidade </a>
+
+              <a href="#" class="hover:underline"> Preferências de cookies </a>
+
+              <a href="#" class="hover:underline"> Informações corporativas </a>
+            </div>
+
+            <button
+              class="border border-zinc-600 px-4 py-3 mt-8 text-sm text-zinc-400 rounded"
+            >
+              🌐 Português
+            </button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

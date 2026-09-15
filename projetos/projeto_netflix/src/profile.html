@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Netflix - Perfis</title>
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="bg-[#141414] text-white">
+    <!-- Logo -->
+    <header class="px-12 py-6 flex items-center justify-between">
+      <h1 class="text-red-600 text-4xl font-black">NETFLIX</h1>
+
+      <a href="./index.html" class="text-zinc-400 hover:text-white transition">
+        ← Voltar ao login
+      </a>
+    </header>
+
+    <!-- Perfis -->
+    <main class="min-h-[75vh] flex flex-col items-center justify-center">
+      <h2 class="text-4xl md:text-5xl font-medium mb-10">
+        Quem está assistindo?
+      </h2>
+
+      <div class="flex flex-wrap justify-center gap-8">
+        <!-- Perfil 1 -->
+        <a href="./home.html" class="group text-center">
+          <img
+            src="./assets/profile1.jpg"
+            alt="Perfil 1"
+            class="w-32 h-32 md:w-40 md:h-40 object-cover rounded border-4 border-transparent group-hover:border-white"
+          />
+
+          <p class="text-zinc-400 group-hover:text-white mt-3 text-lg">Frank</p>
+        </a>
+
+        <!-- Perfil 2 -->
+        <a href="./home.html" class="group text-center">
+          <img
+            src="./assets/profile2.jpg"
+            alt="Perfil 2"
+            class="w-32 h-32 md:w-40 md:h-40 object-cover rounded border-4 border-transparent group-hover:border-white"
+          />
+
+          <p class="text-zinc-400 group-hover:text-white mt-3 text-lg">
+            Visitante
+          </p>
+        </a>
+      </div>
+
+      <button
+        class="mt-12 border border-zinc-500 text-zinc-400 px-6 py-2 tracking-widest hover:text-white hover:border-white"
+      >
+        GERENCIAR PERFIS
+      </button>
+    </main>
+  </body>
+</html>
