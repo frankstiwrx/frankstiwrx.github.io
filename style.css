@@ -795,3 +795,64 @@ body {
   color: var(--subtext);
   font-weight: 500;
 }
+
+/* =========================================
+   PORTFÓLIO 3.0 - TECNOLOGIAS COM ÍCONES
+   ========================================= */
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 7px 11px;
+
+  background: #141720;
+  border: 1px solid #272b3a;
+  border-radius: 999px;
+
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  transition:
+    border-color 200ms ease,
+    background-color 200ms ease,
+    transform 200ms ease;
+}
+
+.tech-pill img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tech-pill:hover {
+    background: #1b1d2b;
+    border-color: rgba(124, 92, 255, 0.45);
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-pill {
+    transition: none;
+  }
+
+  .tech-pill:hover {
+    transform: none;
+  }
+}
