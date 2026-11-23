@@ -676,3 +676,107 @@ body {
     gap: 10px;
   }
 }
+
+/* =========================================
+   PORTFÓLIO 3.0 - REFINAMENTO VISUAL
+   ========================================= */
+
+/* 1. Iluminação ambiente
+   Mantém a paleta escura e o roxo original */
+
+body {
+  background:
+    radial-gradient(
+      ellipse 65% 35% at 12% 5%,
+      rgba(124, 92, 255, 0.11),
+      transparent 75%
+    ),
+    linear-gradient(180deg, var(--bg), #0b0d12 60%);
+}
+
+/* 2. Tipografia dos títulos */
+
+.brand h1,
+.hero h2,
+.section-title,
+.project-title,
+.edu-item h4 {
+  font-family: "Montserrat", "Inter", sans-serif;
+}
+
+.hero h2 {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.project-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+/* 3. Animação suave nos cards */
+
+.project {
+  transition:
+    transform 240ms ease,
+    border-color 240ms ease,
+    box-shadow 240ms ease;
+}
+
+/* Destaque acessível também pelo teclado */
+
+.project:focus-within {
+  border-color: rgba(124, 92, 255, 0.5);
+}
+
+/* 4. Moldura das imagens */
+
+.project > div:last-child {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.project img {
+  transition: transform 320ms ease;
+}
+
+/* 5. Interações com mouse */
+
+@media (hover: hover) and (pointer: fine) {
+  .project:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(124, 92, 255, 0.48);
+
+    box-shadow:
+      0 14px 36px rgba(0, 0, 0, 0.38),
+      0 0 18px rgba(124, 92, 255, 0.055);
+  }
+
+  .project:hover img {
+    transform: scale(1.025);
+  }
+}
+
+/* 6. Acessibilidade:
+   respeitar quem prefere menos animações */
+
+@media (prefers-reduced-motion: reduce) {
+  .project,
+  .project img {
+    transition: none;
+  }
+
+  .project:hover {
+    transform: none;
+  }
+
+  .project:hover img {
+    transform: none;
+  }
+}
