@@ -1349,3 +1349,30 @@ footer.container small {
     transition: none;
   }
 }
+
+/* =========================================
+   PORTFÓLIO 3.0 - IRMÃOS MIAU
+   ========================================= */
+
+.miau-beta {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+
+  margin: 10px 0 14px;
+  padding: 6px 11px;
+
+  background: rgba(124, 92, 255, 0.12);
+  border: 1px solid rgba(124, 92, 255, 0.3);
+  border-radius: 999px;
+
+  color: #b7a8ff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.miau-coming-soon {
+  opacity: 0.55;
+  cursor: default;
+  pointer-events: none;
+}
