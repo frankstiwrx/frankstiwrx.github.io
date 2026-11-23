@@ -879,3 +879,41 @@ body {
   width: 14px;
   height: 14px;
 }
+
+/* =========================================
+   PORTFÓLIO 3.0 - ÍCONES NOS CARDS
+   ========================================= */
+
+.project .skills .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease;
+}
+
+.project .skills .chip img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project .skills .chip:hover {
+    transform: translateY(-2px);
+    border-color: rgba(124, 92, 255, 0.45);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project .skills .chip {
+    transition: none;
+  }
+
+  .project .skills .chip:hover {
+    transform: none;
+  }
+}
