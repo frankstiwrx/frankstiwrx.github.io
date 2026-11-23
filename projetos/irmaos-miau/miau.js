@@ -1,36 +1,43 @@
-/* Página dos Irmãos Miau — carregamento da galeria existente do portfólio */
+/* Galeria independente dos Irmãos Miau */
+
 document.addEventListener("DOMContentLoaded", () => {
   const year = document.getElementById("year");
-  if (year) year.textContent = new Date().getFullYear();
 
-  const container = document.getElementById("miau-gallery");
-  const paths = window.PORTFOLIO_GALLERIES?.["irmaos-miau"];
-  if (!container || !Array.isArray(paths) || paths.length === 0) return;
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
 
-  container.replaceChildren();
-  paths.forEach((path, index) => {
-    if (typeof path !== "string" || !/^img\/gallery\/irmaos-miau\//.test(path))
-      return;
-    const href = `../../${path}`;
+  const imagens = [
+    ["01-apresentacao.png", "Apresentação do jogo"],
+    ["02-menu.png", "Menu principal"],
+    ["03-selecao-personagens.png", "Seleção de personagens"],
+    ["04-luta-academia.png", "Academia de jiu-jítsu"],
+    ["05-luta-dojo.png", "Dojo de jiu-jítsu"],
+    ["06-personalizacao.png", "Personalização"],
+  ];
+
+  const galeria = document.getElementById("miau-gallery");
+
+  if (!galeria) return;
+
+  imagens.forEach(([arquivo, titulo]) => {
+    const caminho = `img/galeria/${arquivo}`;
+
     const link = document.createElement("a");
-    link.className = "screenshot";
-    link.href = href;
+    link.href = caminho;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    link.setAttribute(
-      "aria-label",
-      `Abrir captura ${index + 1} dos Irmãos Miau`,
-    );
+    link.className = "screenshot";
 
     const img = document.createElement("img");
-    img.src = href;
-    img.alt = `Captura ${index + 1} de Aventura dos Irmãos Miau`;
+    img.src = caminho;
+    img.alt = titulo + " de Aventura dos Irmãos Miau";
     img.loading = "lazy";
 
-    const caption = document.createElement("span");
-    caption.textContent = `Captura ${String(index + 1).padStart(2, "0")}`;
+    const legenda = document.createElement("span");
+    legenda.textContent = titulo;
 
-    link.append(img, caption);
-    container.appendChild(link);
+    link.append(img, legenda);
+    galeria.appendChild(link);
   });
 });

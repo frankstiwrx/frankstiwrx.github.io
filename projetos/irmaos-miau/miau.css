@@ -624,9 +624,6 @@ h1 span {
   .top-links {
     gap: 8px;
   }
-  .top-links > a:not(.back-link) {
-    display: none;
-  }
   .top-links .back-link {
     font-size: 12px;
   }
@@ -699,5 +696,33 @@ h1 span {
   .feature-card:hover,
   .screenshot:hover {
     transform: none;
+  }
+}
+
+/* Cabeçalho alinhado ao portfólio principal */
+
+.header-inner {
+  min-height: 68px;
+}
+
+.site-brand {
+  font-size: 28px;
+}
+
+.top-links {
+  gap: 18px;
+}
+
+.top-links a {
+  font-size: 14px;
+}
+
+@media (max-width: 620px) {
+  .site-brand {
+    font-size: 16px;
+  }
+
+  .top-links {
+    gap: 8px;
   }
 }
