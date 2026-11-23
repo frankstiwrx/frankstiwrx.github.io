@@ -970,7 +970,7 @@ body {
 #experiencia,
 #contato {
   margin-top: 0;
-  padding-top: 28px;
+  padding-top: 40px;
 }
 
 /* Espaço entre o título e o conteúdo */
@@ -1065,5 +1065,174 @@ body {
 
   .experience-card:hover {
     transform: none;
+  }
+}
+
+/* =========================================
+   PORTFÓLIO 3.0 - CONTATO E CURRÍCULO
+   ========================================= */
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.contact-card,
+.resume-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 64px;
+  padding: 14px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact-card img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  filter: brightness(0) saturate(100%) invert(65%) sepia(42%) saturate(1470%)
+    hue-rotate(210deg) brightness(101%);
+}
+
+.contact-card:hover,
+.resume-trigger:hover {
+  border-color: rgba(124, 92, 255, 0.5);
+  background: #171a25;
+}
+
+/* Botão expansível do currículo */
+
+.resume-dropdown {
+  position: relative;
+  min-width: 0;
+}
+
+.resume-trigger {
+  height: 100%;
+  list-style: none;
+}
+
+.resume-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.resume-arrow {
+  color: #a995ff;
+  transition: transform 200ms ease;
+}
+
+.resume-dropdown[open] .resume-arrow {
+  transform: rotate(180deg);
+}
+
+/* Opções PDF e DOCX */
+
+.resume-options {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 20;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+
+  width: 100%;
+  min-width: 200px;
+  padding: 10px;
+
+  background: #171a25;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.resume-options a {
+  padding: 10px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.resume-options a:hover {
+  border-color: var(--brand);
+}
+
+/* Navegação por teclado */
+
+.contact-card:focus-visible,
+.resume-trigger:focus-visible,
+.resume-options a:focus-visible {
+  outline: 2px solid #a995ff;
+  outline-offset: 3px;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+  .contact-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resume-arrow {
+    transition: none;
+  }
+}
+
+/* =========================================
+   PORTFÓLIO 3.0 - REFINAMENTO DO RODAPÉ
+   ========================================= */
+
+footer.container {
+  width: 100%;
+  max-width: none;
+
+  margin-top: 44px;
+  padding: 26px 20px 38px;
+
+  border-top: 1px solid var(--border);
+  background: rgba(12, 14, 19, 0.45);
+
+  text-align: center;
+}
+
+footer.container small {
+  color: var(--subtext);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 600px) {
+  footer.container {
+    margin-top: 32px;
+    padding: 22px 16px 30px;
   }
 }
