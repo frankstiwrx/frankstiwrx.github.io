@@ -856,3 +856,26 @@ body {
     transform: none;
   }
 }
+
+/* =========================================
+   PORTFÓLIO 3.0 - TECNOLOGIAS DOS PROJETOS
+   ========================================= */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.project-tech .tech-pill {
+  padding: 6px 9px;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.project-tech .tech-pill img {
+  width: 14px;
+  height: 14px;
+}
