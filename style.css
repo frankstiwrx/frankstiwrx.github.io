@@ -922,3 +922,9 @@ body {
 .project .skills .chip img[src$="vercel.svg"] {
   filter: brightness(0) invert(1);
 }
+.education-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
