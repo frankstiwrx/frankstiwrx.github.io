@@ -928,3 +928,70 @@ body {
   gap: 16px;
   margin-top: 20px;
 }
+/* =========================================
+   PORTFÓLIO 3.0 - ÍCONES DAS SEÇÕES
+   ========================================= */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.section-title img {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+
+  /* Roxo discreto da identidade visual */
+  filter: brightness(0) saturate(100%) invert(65%) sepia(42%) saturate(1470%)
+    hue-rotate(210deg) brightness(101%);
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    gap: 9px;
+  }
+
+  .section-title img {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+/* =========================================
+   PORTFÓLIO 3.0 - ESPAÇAMENTO DAS SEÇÕES
+   ========================================= */
+
+/* Separação entre Projetos, Formação,
+   Experiência e Contato */
+
+#formacao,
+#experiencia,
+#contato {
+  margin-top: 0;
+  padding-top: 28px;
+}
+
+/* Espaço entre o título e o conteúdo */
+#formacao .section-title,
+#experiencia .section-title,
+#contato .section-title {
+  margin-bottom: 24px;
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 600px) {
+  #formacao,
+  #experiencia,
+  #contato {
+    margin-top: 0;
+    padding-top: 32px;
+  }
+
+  #formacao .section-title,
+  #experiencia .section-title,
+  #contato .section-title {
+    margin-bottom: 20px;
+  }
+}
