@@ -917,3 +917,8 @@ body {
     transform: none;
   }
 }
+/* Melhora a visibilidade dos ícones escuros */
+.project .skills .chip img[src$="express.svg"],
+.project .skills .chip img[src$="vercel.svg"] {
+  filter: brightness(0) invert(1);
+}
