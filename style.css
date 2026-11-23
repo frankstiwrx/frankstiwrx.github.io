@@ -1376,3 +1376,33 @@ footer.container small {
   cursor: default;
   pointer-events: none;
 }
+
+/* =========================================
+   RESPONSIVIDADE - TRILHAS DE DESENVOLVIMENTO
+   ========================================= */
+
+@media (max-width: 600px) {
+  .education-tracks {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .education-track {
+    min-width: 0;
+    width: 100%;
+  }
+
+  /* Divisão visual entre as trilhas */
+  .education-track + .education-track {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+  }
+
+  /* Tecnologias organizadas em linhas flexíveis */
+  .education-track .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
