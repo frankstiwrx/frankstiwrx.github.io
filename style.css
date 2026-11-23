@@ -780,3 +780,18 @@ body {
     transform: none;
   }
 }
+
+/* =========================================
+   PORTFÓLIO 3.0 - AJUSTES DA APRESENTAÇÃO
+   ========================================= */
+
+/* Alinha a foto com o início do conteúdo */
+.hero {
+  align-items: flex-start;
+}
+
+/* Localização com cor discreta */
+.hero .hero-location {
+  color: var(--subtext);
+  font-weight: 500;
+}
