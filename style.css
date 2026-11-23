@@ -650,11 +650,15 @@ body {
   padding-top: var(--nav-h);
 }
 
-/* Empilhar nome + menu no mobile e ajustar altura reservada */
-@media (max-width: 600px) {
+/* =========================================
+   CABEÇALHO RESPONSIVO - TABLETS E MOBILE
+   ========================================= */
+
+@media (max-width: 780px) {
   :root {
     --nav-h: 96px;
-  } /* espaço maior no topo */
+  }
+
   .nav {
     flex-direction: column;
     align-items: center;
@@ -662,18 +666,25 @@ body {
     height: auto;
     padding: 10px 0;
   }
+
   .brand {
     justify-content: center;
     text-align: center;
   }
-  .brand h1 {
-    font-size: 18px;
-    white-space: normal;
-  }
+
   .menu {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+  }
+}
+
+/* Ajustes adicionais para celulares */
+
+@media (max-width: 600px) {
+  .brand h1 {
+    font-size: 18px;
+    white-space: normal;
   }
 }
 
