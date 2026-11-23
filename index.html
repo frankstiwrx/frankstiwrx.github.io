@@ -155,6 +155,54 @@
           Projetos em Destaque
         </h3>
 
+        <!-- Filtros dos projetos -->
+        <div class="project-filters" role="group" aria-label="Filtrar projetos">
+          <button
+            type="button"
+            class="project-filter is-active"
+            data-filter="todos"
+            aria-pressed="true"
+          >
+            Todos
+          </button>
+
+          <button
+            type="button"
+            class="project-filter"
+            data-filter="frontend"
+            aria-pressed="false"
+          >
+            Frontend
+          </button>
+
+          <button
+            type="button"
+            class="project-filter"
+            data-filter="backend"
+            aria-pressed="false"
+          >
+            Backend
+          </button>
+
+          <button
+            type="button"
+            class="project-filter"
+            data-filter="hardware"
+            aria-pressed="false"
+          >
+            Hardware
+          </button>
+
+          <button
+            type="button"
+            class="project-filter"
+            data-filter="outros"
+            aria-pressed="false"
+          >
+            Outros
+          </button>
+        </div>
+
         <div class="grid">
           <article class="project" aria-labelledby="vibrotatil-title">
             <div>
@@ -1093,5 +1141,6 @@
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>
+    <script src="project-filters.js" defer></script>
   </body>
 </html>
